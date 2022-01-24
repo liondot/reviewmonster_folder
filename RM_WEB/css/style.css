@@ -1969,7 +1969,7 @@ section.quick_menu {
         top: 0;
         bottom: 0;
         z-index: 202;
-        width: 75%;
+        width: 88%;
         background: #fff;
         transition: .5s ease-in;
     }
@@ -2017,12 +2017,13 @@ section.quick_menu {
         display: none;
     }
 
-    .gnb_hd_myinfo_id a {
+    .gnb_hd_myinfo_id span {
         font-size: 16px;
         font-weight: bold;
+        width: 100%;
     }
 
-    .gnb_hd_myinfo_id a span {
+    .gnb_hd_myinfo_id span em {
         font-weight: normal;
         font-size: 14px;
     }
@@ -2033,6 +2034,15 @@ section.quick_menu {
 
     .gnb_hd_myinfo_txt {
         position: relative;
+    }
+
+    
+    .gnb_hd {
+        width: 50px;
+        height: 30px;
+        display: inline-block;
+        width: 145px;
+        height: 40px;
     }
 
     header .mo_nav .gnb_hd_myinfo_logout .top_icon {

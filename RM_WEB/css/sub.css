@@ -31,7 +31,7 @@ body {
 
 section#area_menu,
 section#product_page,
-section#report_campaign,
+section.report_campaign,
 section#area_menu.report_page {
     padding: 0;
     width: 100%;
@@ -121,7 +121,6 @@ section#product_page:after {
     padding: 0;
 }
 
-
 .area_view a {
     display: inline-block;
     text-align: center;
@@ -157,6 +156,11 @@ section#product_page:after {
 
 .ad_view a {
     margin: 15px 0;
+}
+
+.report_detail {
+    border: 1px solid red;
+    padding: 0;
 }
 
 
@@ -1975,12 +1979,6 @@ tbody tr:nth-child(6) .l a:before {
     margin-top: 0;
 }
 
-/* my_select.html css  */
-
-.my_main_title {
-    margin: 50px 0;
-}
-
 /* my_point.html css  */
 
 .point_btns {
@@ -2088,7 +2086,7 @@ input[type=checkbox] {
     text-align: center;
     line-height: 40px;
     position: absolute;
-    right: 0;
+    right: 30px;
     margin-top: 30px;
 }
 
@@ -2479,6 +2477,10 @@ section#product_detail_menu {
     padding: 0;
 }
 
+.product_menu_mo {
+    display: none;
+}
+
 section.product_menu:after {
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
@@ -2534,12 +2536,12 @@ section.product_menu:after {
         display: none;
     }
 
-    .article_wrapper article:nth-child(2) .sub_my_page_profile,
+    /* .article_wrapper article:nth-child(2) .sub_my_page_profile,
     .article_wrapper article:nth-child(2) .sub_my_point,
     .article_wrapper article:nth-child(2) .my_page_icons,
     .article_wrapper article:nth-child(2) .my_status_container {
         display: none;
-    }
+    } */
 
     /*제품  sub/project.html  */
     .product_menu {
@@ -2578,8 +2580,9 @@ section.product_menu:after {
         display: none;
     }
 
-    .area_menu_mo {
-        display: flex;
+    .product_menu_mo {
+        /* display: flex; */
+        display: none;
         height: 40px;
         width: 100%;
         overflow: hidden;
@@ -2589,7 +2592,6 @@ section.product_menu:after {
     .area_select {
         flex: 1;
     }
-
 
     .area_select label {
         font-size: 16px;
@@ -2746,29 +2748,25 @@ section.product_menu:after {
         text-align: center;
     }
 
-    .sub_box_table table tr {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-    }
-
     .sub_box_table table tr th{
-        width: 100%;
-        text-align: center;
-        padding-left: unset;
         padding: 10px 0;
-        background-color: #e9e9e9;
+        padding-left: 52px;
+        font-size: 13px;
+        font-weight: normal;
     }   
 
-  
+    .sub_box_table table tr th:after {
+        content: '';
+        width: 2px;
+        height: 55%;
+        background-color: #e6e6e6;
+        position: absolute;
+        right: 18px;
+    }
 
     .sub_box_table table tr td {
         padding: 15px 0;
-    }
-
-    .sub_form_box {
-        padding: 0;
+        font-size: 13px;
     }
 
     .sub_appli {
@@ -2783,6 +2781,10 @@ section.product_menu:after {
         padding: 10px 0;
         left: 0;
     } 
+
+    .area_view {
+        display: none;
+    }
 
     .sub_appli a {
         width: 50%;
@@ -3011,7 +3013,7 @@ section.product_menu:after {
 
     .sub_menu_profile .sub_menu_profile_img {
         margin: 0;
-        display: none;
+        /* display: none; */
     }
 
     .sub_menu_nick_name {
@@ -3023,16 +3025,16 @@ section.product_menu:after {
     }
 
     .sub_menu_bottom {
-        display: none;
+        /* display: none; */
     }
 
     .sub_menu_top ul li.active:after {
-        display: none;
+        /* display: none; */
     }
 
     .my_page_sec {
         width: 100%;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .my_page_info {
@@ -3081,7 +3083,7 @@ section.product_menu:after {
         flex-wrap: wrap;
         justify-content: center;
         margin: 0;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     .my_status {
@@ -3135,6 +3137,7 @@ section.product_menu:after {
     .my_main_title {
         margin-bottom: 35px;
         text-align: center;
+        margin: 50px 0;
     }
 
     .point_btn_list {
@@ -3225,7 +3228,11 @@ section.product_menu:after {
     }
 
     .ad_box_table table tr th:before, .sub_box_table table tr th:before {
-        left: 60px;
+        left: 0;
+    }
+
+    .ad_box_table table tr th, .sub_box_table table tr th {
+        width: 135px;
     }
 
     .ad_box_table table tr th:after {
@@ -3287,8 +3294,19 @@ section.product_menu:after {
         display: none;
     }
 
+    .gnb_hd_myinfo_txt {
+        border: 1px solid cadetblue;
+    }
 
-    
+    .gnb_hd {
+        border: 2px solid crimson;
+        width: 50px;
+        height: 30px;
+        display: inline-block;
+        width: 145px;
+        height: 40px;
+    }
+
 
 
 
