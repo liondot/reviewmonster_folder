@@ -18,7 +18,7 @@ body {
 }
 
 section {
-    width: 1200px; 
+    width: 1200px;
     margin: 0 auto;
     height: inherit;
     padding: 80px 0;
@@ -1434,6 +1434,27 @@ section.quick_menu {
     margin-left: 18px;
 }
 
+/* point_apply.html  */
+.mypage_tit .txt_medium {
+    font-size: 32px;
+}
+
+.info_form_tit {
+    font-size: 20px;
+    color: #333;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    line-height: 1;
+}
+
+.info_form .info_basic div.form {
+    margin-bottom: 100px;
+    padding-top: 38px;
+    display: inline-block;
+    width: 100%;
+}
+
 
 /* mobile ver*/
 @media (max-width:700px) {
@@ -2036,7 +2057,7 @@ section.quick_menu {
         position: relative;
     }
 
-    
+
     .gnb_hd {
         width: 50px;
         height: 30px;
@@ -2290,6 +2311,13 @@ section.quick_menu {
     .lnb_menu li:last-child a:before {
         background: url(../img/common/reviewmonster_icon.png);
         background-position: -281px -127px;
+    }
+
+    /* join.html, login.html  */
+
+    .join_sns>div:before,
+    .login_sns>div:before {
+        left: 40px;
     }
 
 }

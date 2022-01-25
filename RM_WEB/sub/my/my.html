@@ -29,6 +29,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- featherlight -->
+    <link rel="stylesheet" href="../../css/featherlight/featherlight.css">
 
 </head>
 
@@ -145,14 +147,14 @@
             </div>
             <!-- 모바일:로그인  -->
             <div class="gnb_hd_myinfo_txt">
-                    <a href="../my/my.html" class="gnb_hd">
-                        <div class="gnb_hd_myinfo_id">
-                            <a href="">윤땡땡 <span>님</span></a>
-                        </div>
-                        <div class="gnb_hd_myinfo_main">
-                            <a href="">shyoon0618@nate.com</a>
-                        </div>
-                    </a>
+                <a href="my.html" class="gnb_hd">
+                    <div class="gnb_hd_myinfo_id">
+                        <span>윤땡땡 <em>님</em></span>
+                    </div>
+                    <div class="gnb_hd_myinfo_main">
+                        <span>shyoon@nate.com</span>
+                    </div>
+                </a>
                     <div class="gnb_hd_logout">
                         <button>로그아웃</button> 
                     </div>
@@ -253,25 +255,25 @@
             </div>
             <div class="my_icon">
                 <div class="my_page_icons">
-                    <a href="" class="my_page_icon">
+                    <a href="social.html" data-featherlight="iframe" class="my_page_icon active">
                         <div class="my_page_image">
                         </div>
                         <span class="my_icon_name">BLOG</span>
                     </a>
-                    <a href="" class="my_page_icon">
+                    <a href="social.html" data-featherlight="iframe" class="my_page_icon">
                         <div class="my_page_image">
                         </div>
-                        <span class="my_icon_name">인스타 연동</span>
+                        <span class="my_icon_name">INSTA</span>
                     </a>
-                    <a href="" class="my_page_icon">
-                        <div class="my_page_image">
+                    <a href="social.html" data-featherlight="iframe" class="my_page_icon">
+                        <div class="my_page_image"> 
                         </div>
-                        <span class="my_icon_name">유튜브 연동</span>
+                        <span class="my_icon_name">YOUTUBE</span>
                     </a>
-                    <a href="" class="my_page_icon">
+                    <a href="social.html" data-featherlight="iframe" class="my_page_icon">
                         <div class="my_page_image">
                         </div>
-                        <span class="my_icon_name">페이스북 연동</span>
+                        <span class="my_icon_name">FACEBOOK</span>
                     </a>
                     <a href="" class="my_page_icon">
                         <div class="my_page_image">
@@ -287,7 +289,7 @@
             </div>
             <div class="my_status_container">
                 <div class="my_status_box">
-                    <a href="" class="my_status">
+                    <a href="../" class="my_status">
                         <div class="my_status_image">
                         </div>
                         <span class="my_status_name">나의 캠페인</span>
@@ -519,6 +521,10 @@
             tabButton();
         })
     </script>
+
+<!-- feaderlight  -->
+<script src="//code.jquery.com/jquery-latest.js"></script>
+<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 

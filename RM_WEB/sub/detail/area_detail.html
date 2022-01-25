@@ -41,8 +41,8 @@
                         <h1><a href="../../index.html"><img src="../../img/rm_logo.svg" alt="로고"></a></h1>
                     </div>
                     <div class="my">
-                        <div class="my_area login"><a href="login.html">로그인</a></div>
-                        <div class="my_area join"><a href="join.html">회원가입</a></div>
+                        <div class="my_area login"><a href="../login.html">로그인</a></div>
+                        <div class="my_area join"><a href="../join.html">회원가입</a></div>
                     </div>
                 </div> 
                 <nav>
@@ -146,14 +146,14 @@
                 </div>
                 <!-- 모바일:로그인  -->
                 <div class="gnb_hd_myinfo_txt">
-                    <div class="gnb_hd">
+                    <a href="../my/my.html" class="gnb_hd">
                         <div class="gnb_hd_myinfo_id">
-                            <a href="">윤땡땡 <span>님</span></a>
+                            <span>윤땡땡 <em>님</em></span>
                         </div>
                         <div class="gnb_hd_myinfo_main">
-                            <a href="">shyoon0618@nate.com</a>
+                            <span>shyoon@nate.com</span>
                         </div>
-                    </div>
+                    </a>
                     <div class="gnb_hd_logout">
                         <button>로그아웃</button>
                     </div>
@@ -285,8 +285,8 @@
                                 </table>
                             </div>
                             <div class="sub_appli">
-                                <a href="">리뷰 신청하기</a>
-                                <a href="">목록 보기</a>
+                                <a href="" class="sub_aplli_list">리뷰 신청하기</a>
+                                <a href="" class="sub_aplli_list">목록 보기</a>
                             </div>
                         </div>
                     </div>
@@ -373,6 +373,37 @@
                                 </td>
                             </tr>
                         </table>
+                        <form class="review_appli_form">
+                            <p class="review_appli_txt">리뷰신청하기</p>
+                            <div class="review_form_con">
+                                <div class="input_form input_con">
+                                    <div class="input_form con_re">
+                                        <label for="addr3" class="input_label addr">주소</label>
+                                    </div>
+                                    <div class="fl">
+                                        <input type="text" name="r_addr1" id="addr3" class="input_box" placeholder="기본주소">
+                                        <button type="button" class="fl_btn review_pop">주소변경</button>
+                                        <input type="text" name="r_addr2" id="addr4" class="input_box" placeholder="상세주소">
+                                    </div>
+                                    <span class="review_pop">주소 오기입으로 인한 문제발생시 비용이 청구 될 수 있습니다.</span>
+                                </div>
+                                <div class="input_form con_re">
+                                    <label for="" class="input_label">신청 한마디</label>
+                                    <textarea name="r_meno" id="r_memo" class="input_box" placeholder="신청한마디를 남겨주세요"></textarea>
+                                </div>
+                                <div class="input_form con_re">
+                                    <label for="" class="input_label">입력사항 1</label>
+                                    <input type="text" name="r_option" id="r_option" class="input_box" placeholder="필수 입력 사항입니다.">
+                                    <span class="review_pop_etc">[상품 받으실 주소] 정확하게 남겨주세요!</span>
+                                </div>
+                                <div class="chk basic">
+                                    <input type="checkbox" name="review_rem" id="review_rem">
+                                    <label for="review_rem" class="pd5">캠페인 유의사항, 제 3자 제공에 동의합니다.</label>
+                                    <a href="" class="join_link">내용보기</a>
+                                </div>
+                            </div>
+                        </form>
+                        <a href="" class="com_btn">신청하기</a>
                     </div>
                     <div class="tab" id="tab2">
                        <div class="tab_menu">
