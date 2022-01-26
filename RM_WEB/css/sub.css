@@ -3426,7 +3426,7 @@ span.review_pop:before {
     }
 
     .ad_box_table table tr th:before, .sub_box_table table tr th:before {
-        left: 0;
+        left: -40px;
     }
 
     .ad_box_table table tr th, .sub_box_table table tr th {
