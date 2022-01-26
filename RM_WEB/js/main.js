@@ -108,3 +108,10 @@ function scollIntoView(selector) {
     scrollTo.scrollIntoView({behavior:'smooth'});
 }
 
+
+ const subAppli = document.querySelector('.sub_appli_list');
+
+ subAppli.addEventListener('click', () => {
+   console.log('jiojiojo');
+ })
+

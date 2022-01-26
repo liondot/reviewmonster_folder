@@ -2709,6 +2709,63 @@ span.review_pop:before {
     text-indent: 10px;
 }
 
+/* point_apply.html  */
+.main_title {
+    font-size: 26px;
+    line-height: 1;
+    padding: 20px 20px 0;
+}
+
+.info_form_tit {
+    font-size: 18px;
+    padding: 10px 20px 20px;
+}
+
+.campaign_box .input_form {
+    padding: 20px 0;
+}
+
+.campaign_box .input_form label {
+    font-size: 15px;
+    width: 90px;
+    display: inline-block;
+}
+
+.campaign_box .input_form input {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 8px 0;
+    outline: none;
+    text-indent: 10px;
+}
+
+.campaign_box .input_form span {
+    display: block;
+    margin-top: 10px;
+    color: var(--color-point);
+}
+
+.campaign_box .input_form .slash {
+    display: inline;
+    margin: 0 5px;
+}
+
+.campaign_box .input_form input {
+    margin-right: 10px;
+}
+
+.campaign_box .input_form:last-child input {
+    margin-right: 0;
+}
+
+.point_apply {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.point_apply .form {
+    margin-right: 100px;
+    padding: 20px;
+}
+
 
 
 /* mobile ver 서브페이지 */
@@ -3422,11 +3479,11 @@ span.review_pop:before {
     }
 
     .ad_box_table table tbody tr td {
-        margin-left: 5px;        ;
+        margin-left: 5px;    
     }
 
     .ad_box_table table tr th:before, .sub_box_table table tr th:before {
-        left: -40px;
+        left: 2px;
     }
 
     .ad_box_table table tr th, .sub_box_table table tr th {

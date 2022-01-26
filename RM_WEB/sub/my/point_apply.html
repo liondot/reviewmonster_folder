@@ -218,30 +218,30 @@
               </div>
           </article>
           <article>
-           <div class="campaign_box apply">
+           <div class="campaign_box apply point_apply">
                <div class="main_title">
                    포인트 관리
                </div>
                <div class="info_basic">
-                   <span class="info_form_tit">캠페인 포인트 출금신청</span>
+                   <span class="info_form_tit">포인트 출금신청</span>
                </div>
                <div class="form">
-                   <div class="input_from">
+                   <div class="input_form">
                        <label for="" class="input_label">현재포인트</label>
                        <input type="text" class="input_box">
                    </div>
-                   <div class="input_from">
+                   <div class="input_form">
                        <label for="" class="input_label">신청금액</label>
                        <input type="text">
                        <span class="info_etctxt3">
                         - 최소 환급 가능 포인트는 50,000p 입니다.
                        </span>
                    </div>
-                   <div class="input_from">
+                   <div class="input_form">
                        <label for="" class="input_label">예금주 이름</label>
                        <input type="text">
                    </div>
-                   <div class="input_from">
+                   <div class="input_form">
                        <label for="" class="input_label">입금계좌</label>
                        <input type="text"><input type="text">
                        <span class="info_etctxt3">- 은행명과 계좌번호를 입혁하세요. 예금주 이름과 입력된 계좌정보가 다를 경우 보류처리 됩니다.</span>
@@ -310,6 +310,12 @@
         document.addEventListener('DOMContentLoaded', function(){
             init();
         });
+
+        const subAppli = document.querySelector('sub_appli_list');
+
+        subAppli.addEventListener('cllick', ()=> {
+            console.log('jiojoj')
+        })
       
     </script>
       
