@@ -567,10 +567,10 @@
 
         // search_Form input focus 
         $(document).ready(function(){
-            $('input').focus(function(){
+            $('#search_box input').focus(function(){
                 $('.search_form').addClass('active')
             });
-            $('input').focusout(function(){
+            $('#search_box input').focusout(function(){
                 $('.search_form').removeClass('active')
             });
         })

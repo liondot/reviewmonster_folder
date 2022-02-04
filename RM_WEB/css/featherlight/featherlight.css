@@ -165,3 +165,53 @@ html.with-featherlight {
 		display: none;
 	}
 }
+
+/* mobile scree width:700px  */
+@media (max-width: 700px) {
+	.featherlight-iframe {
+		width: inherit;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	.featherlight-content {
+		width: inherit;
+		box-sizing: border-box;
+
+	}
+
+	.social_wrapper {
+		width: 100%;
+	}
+
+	.social_wrapper form {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0;
+	}
+
+	.social_wrapper form div {
+		flex-direction: column;
+		margin: 5px;
+	}
+
+	.social_wrapper form div input {
+		padding: 10px;
+		width: 100%;
+	}
+
+	.social_title {
+		text-indent: 10px;
+	}
+
+	.sns_box input {
+		text-indent: 0;
+	}
+
+	.featherlight-content {
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	
+}

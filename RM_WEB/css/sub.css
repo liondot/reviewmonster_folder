@@ -585,7 +585,7 @@ section.all_campaign_box {
 
 #info_box table tbody {
     width: 100%;
-    
+
 }
 
 
@@ -1689,54 +1689,64 @@ tbody tr:nth-child(6) .l a:before {
 .my_page_icon:first-child:hover .my_page_image {
     background-position: bottom;
 }
+
 .my_page_icon:nth-child(2).active .my_page_image,
 .my_page_icon:nth-child(2):hover .my_page_image {
     background-position: bottom;
 }
+
 .my_page_icon:nth-child(3).active .my_page_image,
 .my_page_icon:nth-child(3):hover .my_page_image {
     background-position: bottom;
 }
+
 .my_page_icon:nth-child(4).active .my_page_image,
 .my_page_icon:nth-child(4):hover .my_page_image {
     background-position: bottom;
 }
+
 .my_page_icon:nth-child(5).active .my_page_image,
 .my_page_icon:nth-child(5):hover .my_page_image {
     background-position: bottom;
 }
+
 .my_page_icon:nth-child(6).active .my_page_image,
 .my_page_icon:nth-child(6):hover .my_page_image {
     background-position: bottom;
 }
 
 
-.my_page_icon:first-child.active .my_icon_name, 
+.my_page_icon:first-child.active .my_icon_name,
 .my_page_icon:first-child:hover .my_icon_name {
     color: #3bbc20;
     font-weight: bold;
 }
-.my_page_icon:nth-child(2).active .my_icon_name, 
+
+.my_page_icon:nth-child(2).active .my_icon_name,
 .my_page_icon:nth-child(2):hover .my_icon_name {
     color: #d33c52;
     font-weight: bold;
 }
-.my_page_icon:nth-child(3).active .my_icon_name, 
+
+.my_page_icon:nth-child(3).active .my_icon_name,
 .my_page_icon:nth-child(3):hover .my_icon_name {
     color: #e23737;
     font-weight: bold;
 }
-.my_page_icon:nth-child(4).active .my_icon_name, 
+
+.my_page_icon:nth-child(4).active .my_icon_name,
 .my_page_icon:nth-child(4):hover .my_icon_name {
     color: #5886f9;
     font-weight: bold;
 }
-.my_page_icon:nth-child(5).active .my_icon_name, 
+
+.my_page_icon:nth-child(5).active .my_icon_name,
 .my_page_icon:nth-child(5):hover .my_icon_name {
     color: #ffc112;
     font-weight: bold;
 }
-.my_page_icon:last-child.active .my_icon_name, 
+
+.my_page_icon:last-child.active .my_icon_name,
 .my_page_icon:last-child:hover .my_icon_name {
     color: #ffe52c;
     font-weight: bold;
@@ -2507,7 +2517,7 @@ section#product_detail_menu {
 }
 
 section.product_menu:after {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .product_detail_menu {
@@ -2666,8 +2676,7 @@ span.review_pop:before {
 }
 
 /* social.html  */
-.social_wrapper {
-}
+.social_wrapper {}
 
 .social_wrapper form {
     padding: 20px;
@@ -2764,6 +2773,12 @@ span.review_pop:before {
 .point_apply .form {
     margin-right: 100px;
     padding: 20px;
+}
+
+#bank_name {
+    padding: 8px;
+    margin: 10px;
+    outline: none;
 }
 
 
@@ -2944,7 +2959,7 @@ span.review_pop:before {
         border: 2px solid red;
     }
 
-    
+
 
     /* sub.html css  */
     #campaign_box {
@@ -3004,12 +3019,12 @@ span.review_pop:before {
     }
 
     .sub_box_table table tr th,
-    .ad_box_table table tbody tr th{
+    .ad_box_table table tbody tr th {
         padding: 10px 0;
         padding-left: 52px;
         font-size: 13px;
         font-weight: normal;
-    }   
+    }
 
     .sub_box_table table tr th:after {
         content: '';
@@ -3021,7 +3036,7 @@ span.review_pop:before {
     }
 
     .sub_box_table table tr td,
-    .ad_box_table table tbody tr td  {
+    .ad_box_table table tbody tr td {
         padding: 15px 0;
         font-size: 13px;
     }
@@ -3037,7 +3052,7 @@ span.review_pop:before {
         box-shadow: 4px 5px 5px 10px rgba(0, 0, 0, 0.1);
         padding: 10px 0;
         left: 0;
-    } 
+    }
 
     .area_view {
         display: none;
@@ -3062,7 +3077,7 @@ span.review_pop:before {
         display: flex;
 
     }
-   
+
 
     #info_box .tab_link {
         box-sizing: border-box;
@@ -3071,7 +3086,7 @@ span.review_pop:before {
         margin: 20px 0;
     }
 
-     
+
     #info_box .tab_link:first-child {
         width: 100px
     }
@@ -3095,15 +3110,9 @@ span.review_pop:before {
         width: 90%;
     }
 
-    .footer_bottom  {
+    .footer_bottom {
         margin-bottom: 50px;
     }
-
-
-    
-
-
-
 
 
     /*sub/review.html  */
@@ -3432,11 +3441,12 @@ span.review_pop:before {
     .ad_boxs {
         display: flex;
     }
+
     .ad_box {
         width: calc(100% / 2.1);
         height: auto;
         padding-bottom: 60px;
-        margin:  0 0 30px 0;
+        margin: 0 0 30px 0;
     }
 
     .ad_card_img {
@@ -3479,14 +3489,16 @@ span.review_pop:before {
     }
 
     .ad_box_table table tbody tr td {
-        margin-left: 5px;    
+        margin-left: 5px;
     }
 
-    .ad_box_table table tr th:before, .sub_box_table table tr th:before {
+    .ad_box_table table tr th:before,
+    .sub_box_table table tr th:before {
         left: 2px;
     }
 
-    .ad_box_table table tr th, .sub_box_table table tr th {
+    .ad_box_table table tr th,
+    .sub_box_table table tr th {
         width: 120px;
     }
 
@@ -3494,7 +3506,8 @@ span.review_pop:before {
         display: none;
     }
 
-    .ad_box_table table tr, .sub_box_table table tr {
+    .ad_box_table table tr,
+    .sub_box_table table tr {
         padding: 5px 0;
     }
 
@@ -3509,7 +3522,7 @@ span.review_pop:before {
         left: 0;
         background-color: #fff;
         z-index: 50;
-        box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
         width: 100%;
         box-sizing: border-box;
         padding: 10px;
@@ -3584,10 +3597,30 @@ span.review_pop:before {
         width: 100% !important;
         box-sizing: border-box;
     }
-    
 
 
-    
+    /* point_apply.html  */
+
+    .campaign_box.point_apply {
+        margin-top: 10px;
+    }
+
+    .point_apply .form {
+        margin-right: 0;
+    }
+
+    .campaign_box.point_apply .input_form input {
+        width: 100%;
+    }
+
+    .campaign_box .input_form label {
+        display: block;
+    }
+
+    #bank_name {
+        margin: 10px 0;
+    }
+
 
 
 

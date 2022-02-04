@@ -220,10 +220,7 @@
           <article>
            <div class="campaign_box apply point_apply">
                <div class="main_title">
-                   포인트 관리
-               </div>
-               <div class="info_basic">
-                   <span class="info_form_tit">포인트 출금신청</span>
+                   포인트 관리 <span>포인트 출금신청</span>
                </div>
                <div class="form">
                    <div class="input_form">
@@ -241,16 +238,48 @@
                        <label for="" class="input_label">예금주 이름</label>
                        <input type="text">
                    </div>
-                   <div class="input_form">
+                   <div class="input_form bank_name">
                        <label for="" class="input_label">입금계좌</label>
-                       <input type="text"><input type="text">
-                       <span class="info_etctxt3">- 은행명과 계좌번호를 입혁하세요. 예금주 이름과 입력된 계좌정보가 다를 경우 보류처리 됩니다.</span>
+                       <select name="" id="bank_name">
+                        <option value="">은행명을 선택하세요</option>
+                        <option value="">경남은행</option>
+                        <option value="">광주은행</option>
+                        <option value="">국민은행</option>
+                        <option value="">기업은행</option>
+                        <option value="">농협중앙회</option>
+                        <option value="">농협회원조합</option>
+                        <option value="">대구은행</option>
+                        <option value="">도이치은행</option>
+                        <option value="">부산은행</option>
+                        <option value="">산업은행</option>
+                        <option value="">상호저축은행</option>
+                        <option value="">새마을금고</option>
+                        <option value="">수협중앙회</option>
+                        <option value="">신한금융투자</option>
+                        <option value="">신한은행</option>
+                        <option value="">신협중앙회</option>
+                        <option value="">외환은행</option>
+                        <option value="">우리은행</option>
+                        <option value="">우체국</option>
+                        <option value="">전북은행</option>
+                        <option value="">제주은행</option>
+                        <option value="">카카오뱅크</option>
+                        <option value="">케이뱅크</option>
+                        <option value="">하나은행</option>
+                        <option value="">한국씨티은행</option>
+                        <option value="">HSBC은행</option>
+                        <option value="">SC제일은행</option>
+                       </select>
+                       <input type="text" placeholder="계좌번호를 입력하세요">
+                       <span class="info_etctxt3">
+                           - 은행명과 계좌번호를 입력하세요. 예금주 이름과 입력된 계좌정보가 다를 경우 보류처리 됩니다.
+                        </span>
                    </div>
                    <div class="input_form">
                        <label for="" class="input_label">주민등록번호</label>
-                        <input type="text">
+                        <input type="text" placeholder="19990101">
                         <span class="slash">-</span>
-                        <input type="text">
+                        <input type="text" placeholder="000000">
                         <span class="info_etctxt3">
                             - 타인의 주민등록번호를 부정 사용하는 자는 3년 이하의 징역 또는 1천만원
                                         이하의 벌금이 부과될 수 있습니다.
@@ -289,6 +318,49 @@
         </div>
       </footer>
     <!-- footer -->
+    <section class="quick_menu">
+        <div class="inner_quick">
+            <div class="detail_arrow">Quick Menu</div>
+            <div class="quick_box_container">
+                <div class="quick_box">
+                    <a href="sub/my/my_message.html">
+                        <div class="quick_icon"></div>
+                        <div class="quick_title">알림</div>
+                    </a>
+                </div>
+                <div class="quick_box">
+                    <a href="sub/my/my.html">
+                        <div class="quick_icon"></div>
+                        <div class="quick_title">마이페이지</div>
+                    </a>
+                </div>
+                <div class="quick_box">
+                    <a href="sub/my/my_appli.html">
+                        <div class="quick_icon"></div>
+                        <div class="quick_title">내 캠페인</div>
+                    </a>
+                </div>
+                <div class="quick_box">
+                    <a href="sub/my/my_inquiry.html">
+                        <div class="quick_icon"></div>
+                        <div class="quick_title">고객센터</div>
+                    </a>
+                </div>
+                <div class="quick_box">
+                    <a href="sub/ad_page.html">
+                        <div class="quick_icon"></div>
+                        <div class="quick_title">광고문의</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- quick menu  -->
+    <div class="arrow_up">
+        <span><img src="../img/index/next.png" alt=""></span>
+    </div>
+    <!-- arrow_up  -->
+    
 
     <script>
 
@@ -308,15 +380,11 @@
 
       // 메뉴 드롭다운 
         document.addEventListener('DOMContentLoaded', function(){
+            // 메뉴드롭다운 
             init();
+            // 퀵메뉴 
+            gotoUp();
         });
-
-        const subAppli = document.querySelector('sub_appli_list');
-
-        subAppli.addEventListener('cllick', ()=> {
-            console.log('jiojoj')
-        })
-      
     </script>
       
 </body>
