@@ -246,7 +246,6 @@
                             <img src="../../img/sub/slider_img2.png" alt="" class="show_slide_img">
                             </div>
                         </div>
-                    
                       </div>
                     <div class="sub_form_list">
                         <div class="sub_form_box">
@@ -436,7 +435,6 @@
                 </div>
             </div>
         </section>
-
         <footer>
             <h2 class="ir_so">실시간영역</h2>
             <div class="footer inner">
@@ -464,6 +462,48 @@
                 </div>
             </div>
         </footer>
+        <section class="quick_menu">
+            <div class="inner_quick">
+                <div class="detail_arrow">Quick Menu</div>
+                <div class="quick_box_container">
+                    <div class="quick_box">
+                        <a href="sub/my/my_message.html">
+                            <div class="quick_icon"></div>
+                            <div class="quick_title">알림</div>
+                        </a>
+                    </div>
+                    <div class="quick_box">
+                        <a href="sub/my/my.html">
+                            <div class="quick_icon"></div>
+                            <div class="quick_title">마이페이지</div>
+                        </a>
+                    </div>
+                    <div class="quick_box">
+                        <a href="sub/my/my_appli.html">
+                            <div class="quick_icon"></div>
+                            <div class="quick_title">내 캠페인</div>
+                        </a>
+                    </div>
+                    <div class="quick_box">
+                        <a href="sub/my/my_inquiry.html">
+                            <div class="quick_icon"></div>
+                            <div class="quick_title">고객센터</div>
+                        </a>
+                    </div>
+                    <div class="quick_box">
+                        <a href="sub/ad_page.html">
+                            <div class="quick_icon"></div>
+                            <div class="quick_title">광고문의</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- quick menu  -->
+        <div class="arrow_up">
+            <span><img src="../../img/index/next.png" alt=""></span>
+        </div>
+        <!-- arrow_up  -->
 
 
         <!-- swiper js  -->
@@ -473,17 +513,13 @@
         <script>
         // <!-- nav영역 dropdown  -->
         document.addEventListener('DOMContentLoaded', function(){
+            // 메뉴 드롭다운 
             init();
+            // 퀵메뉴 
+            gotoUp();
         })
-
         
- const subAppli = document.querySelector('.sub_appli_list');
-
-subAppli.addEventListener('click', () => {
-  console.log('jiojiojo');
-})
-
 
         </script>
-</body>
+</body> 
 </html>

@@ -16,7 +16,6 @@
       }
 
 
-
     // 서브페이지 탭버튼 my(신청캠페인, 선정캠페인, 등록한 리뷰)
     function tabButton() {
 
@@ -98,8 +97,8 @@ $(document).ready(function(){
     });
 
     $('#search_input').focusout(function(){
-        $('.search_form').removeClass('active')
-    })
+        $('.search_form').removeClass('active');
+    });
 })
 
 
@@ -115,3 +114,37 @@ function scollIntoView(selector) {
    console.log('jiojiojo');
  })
 
+
+ function gotoUp() {
+  // 메인 퀵메뉴 & gototop버튼 
+  const headerInner = document.querySelector('.header_inner');
+  const headerHeight = headerInner.getBoundingClientRect().height;
+  const quickmenu = document.querySelector('.quick_menu');
+  const arrowUp = document.querySelector('.arrow_up');
+
+  // 퀵메뉴
+  document.addEventListener('scroll', () => {
+      if (window.scrollY > headerHeight / 3) {
+          quickmenu.classList.add('visible')
+      } else {
+          quickmenu.classList.remove('visible')
+      }
+  });
+
+  // gototop 버튼
+  document.addEventListener('scroll', () => {
+      if (window.scrollY > headerHeight / 2) {
+          arrowUp.classList.add('visible')
+      } else {
+          arrowUp.classList.remove('visible')
+      }
+  });
+
+  arrowUp.addEventListener('click', () => {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      })
+  })
+
+}

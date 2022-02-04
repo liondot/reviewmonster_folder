@@ -1006,39 +1006,35 @@
         </div>
     </section>
     <!-- quick menu  -->
-
-    <!-- arrow_up  -->
     <div class="arrow_up">
         <span><img src="img/index/next.png" alt=""></span>
     </div>
+    <!-- arrow_up  -->
 
 
     <!-- slick slide js  -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js">
-    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/main.js"></script>
 
     <script>
         // 모바일 버전 toggle 버튼 
         $('.toggle').click(function () {
             $('.mo_nav').addClass('active');
             $('.dim').addClass('active')
-        })
+        });
 
         $('.dim, .mo_nav').click(function () {
             $('.dim, .mo_nav').removeClass('active')
-        })
-
+        });
 
         //   메인 메뉴 드롭다운 버튼 
         $(".menu, .dropdown_menu").mouseover(function () {
             $(".overlay, .dropdown_menu").addClass("active")
-        })
+        });
         $('.menu, .overlay').mouseleave(function () {
             $('.overlay, .dropdown_menu').removeClass('active')
-        })
-
-
+        });
 
         // <!-- 슬릭 슬라이더 비주얼 영역  -->
         $(function () {
@@ -1049,7 +1045,7 @@
                     breakpoint: 600,
                     settings: 'unslick',
                 }]
-            })
+            });
         });
 
 
@@ -1060,7 +1056,6 @@
             speed: 300,
             slidesToShow: 5,
             slidesToScroll: 5,
-            // autoplay: true,
             autoplaySpeed: 3000,
             responsive: [{
                     breakpoint: 1024,
@@ -1204,39 +1199,14 @@
             $('#search_input').focusout(function () {
                 $('.search_form').removeClass('active')
             })
-        })
-
-
-        // 메인 퀵메뉴 & gototop버튼 
-        const headerInner = document.querySelector('.header_inner');
-        const headerHeight = headerInner.getBoundingClientRect().height;
-        const quickmenu = document.querySelector('.quick_menu');
-        const arrowUp = document.querySelector('.arrow_up');
-
-        // 퀵메뉴
-        document.addEventListener('scroll', () => {
-            if (window.scrollY > headerHeight / 3) {
-                quickmenu.classList.add('visible')
-            } else {
-                quickmenu.classList.remove('visible')
-            }
         });
 
-        // gototop 버튼
-        document.addEventListener('scroll', () => {
-            if (window.scrollY > headerHeight / 2) {
-                arrowUp.classList.add('visible')
-            } else {
-                arrowUp.classList.remove('visible')
-            }
-        });
 
-        arrowUp.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            })
-        })
+            document.addEventListener('DOMContentLoaded', function(){
+                gotoUp();
+            });
+
+       
     </script>
 </body>
 
