@@ -53,7 +53,7 @@ section#area_menu:after {
     position: absolute;
     background: rgb(226, 226, 226);
     left: 0;
-    top: 50%;
+    top: 52%;
     transform: translateY(-50%);
 }
 
@@ -61,6 +61,8 @@ section#area_menu.report_page:after,
 section#area_menu.purchase_review_page:after {
     top: 100%;
 }
+
+/* product.html  */
 
 section#product_page:after {
     content: '';
@@ -78,6 +80,10 @@ section#product_page:after {
     padding: 5px 0;
     position: relative;
     height: 100%;
+}
+
+.pagemenu_list:first-child {
+    padding-left: 0;
 }
 
 .product_menu ul li,
@@ -275,7 +281,6 @@ section#product_page:after {
     padding: 23px 0;
     font-size: 16px;
     display: flex;
-
 }
 
 .ad_box_table table tr th,
@@ -1003,6 +1008,8 @@ section#submenu {
     padding: 15px 5px;
     text-align: center;
 }
+
+
 
 .sub_header {
     width: 100%;
@@ -2781,6 +2788,248 @@ span.review_pop:before {
     outline: none;
 }
 
+/* my_info_revition.html */
+.input_title {
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+.se_sns_box {
+    padding: 42px;
+    background-color: #fbfbfb;
+}
+
+.se_sns {
+    padding: 0 0 15px;
+    font-size: 14px;
+}
+
+.se_sns label {
+    width: 70px;
+    padding: 5px;
+    text-align: left;
+    padding-left: 40px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.se_sns label:before {
+    content: '';
+    position: absolute;
+    border: 1px solid red;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+}
+
+.se_sns input {
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 500px;
+    border-radius: 15px;
+    text-indent: 5px;
+}
+
+.se_sns button {
+    border: 1px solid gray;
+    width: 100px;
+    height: 32px;
+    position: absolute;
+    border-radius: 15px;
+    right: 197px;
+    background-color: #fff;
+}
+
+.my_tab_container > div {
+    margin-bottom: 46px;
+}
+
+.pw_input {
+    background-color: #fbfbfb;
+    padding: 42px;
+}
+
+.pw_input > div label {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100px;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 15px;
+    margin-right: 10px;
+    color: #000;
+    text-indent: 5px;
+    background-color: #fff;
+}
+
+.pw_input > div input {
+    width: 500px;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.pw_input > div input::placeholder {
+    color: #e8e8e8;
+    font-size: 14px;
+}
+
+.pw_input > div  {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.pw_input button {
+    border: 1px solid gray;
+    padding: 8px;
+    border-radius: 15px;
+    width: 130px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-left: 160px;
+}
+
+.category {
+    display: flex;
+    line-height: 100px;
+    justify-content: center;
+    background-color: #fbfbfb;
+    padding: 45px 0;
+}
+
+.category_title {
+    width: 120px;
+    display: flex;
+    padding: 0 10px;
+    margin: 0 10px;
+    justify-content: center;
+    font-size: 15px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.category_list {
+    display: flex;
+    width: 100%;
+}
+
+.category_list ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category_list ul li {
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 32px;
+    line-height: 32px;
+    border-radius: 20px;
+    margin: 3px;
+    padding: 0 30px;
+}
+
+.category_list .active,
+.active_input .active {
+    border: 1px solid var(--color-point);
+    color: var(--color-point);
+}
+
+
+.active_input div:nth-child(2),
+.active_input div:nth-child(3), 
+.active_input div:nth-child(4) {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fdfdfd;
+    padding: 50px 0;
+    margin-bottom: -1px;
+}
+
+.active_input .active_area {
+    background-color: #fbfbfb;
+    display: flex;
+    padding: 5px 10px;
+}
+
+.active_input span {
+    width: 100px;
+    font-size: 15px;
+    margin-right: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.active_input ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.active_input ul li {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px 15px;
+    display: flex;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.my_info_box {
+    background-color: #fbfbfb;
+    padding: 20px;
+}
+
+.my_tab_container label {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: inline-block;
+    padding: 8px 20px;
+    width: 130px;
+    text-align: center;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.my_tab_container input {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px 10px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.my_tab_container .info_sex #info_sex{
+    border: 1px solid red;
+    display: inline-block;
+}
+
+.info_sex {
+    display: inline-block;
+    width: 100%;
+}
+
+#info_sex {
+    color: crimson;
+}
+
+.info_mobile button {
+    border: 1px solid var(--color-point);
+    color: var(--color-point);
+    padding: 8px 10px;
+    background: #fff;
+    font-weight: bold;
+}
+
 
 
 /* mobile ver 서브페이지 */
@@ -3228,12 +3477,11 @@ span.review_pop:before {
     }
 
     .tbSty1 tr .l {
-        border: 2px solid red;
         font-weight: 100%;
     }
 
     tbody tr .l a:before {
-        left: 0;
+        left: -40px;
     }
 
 
@@ -3282,7 +3530,6 @@ span.review_pop:before {
 
     .sub_menu_profile .sub_menu_profile_img {
         margin: 0;
-        /* display: none; */
     }
 
     .sub_menu_nick_name {
@@ -3293,17 +3540,8 @@ span.review_pop:before {
         display: flex;
     }
 
-    .sub_menu_bottom {
-        /* display: none; */
-    }
-
-    .sub_menu_top ul li.active:after {
-        /* display: none; */
-    }
-
     .my_page_sec {
         width: 100%;
-        /* overflow: hidden; */
     }
 
     .my_page_info {
@@ -3494,16 +3732,17 @@ span.review_pop:before {
 
     .ad_box_table table tr th:before,
     .sub_box_table table tr th:before {
-        left: 2px;
+        left: -40px;
     }
 
     .ad_box_table table tr th,
     .sub_box_table table tr th {
-        width: 120px;
+        width: 100px;
     }
 
     .ad_box_table table tr th:after {
-        display: none;
+        height: 50%;
+        right: 0;
     }
 
     .ad_box_table table tr,
@@ -3515,6 +3754,8 @@ span.review_pop:before {
         text-align: center;
         display: inline-block;
     }
+
+   
 
     .ad_sub_appli {
         position: fixed;
