@@ -5,50 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
     <title>advertiser</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/advertiser.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/advertiser.css">
 </head>
 <body>
     <section id="advertiser_section">
         <div class="aside_left">
                 <div class="logo_box">
-                    <div class="logo_simbol"></div>
-                    <div class="logo_txt"></div>
+                    <div class="logo_simbol"><img src="../img/sub/advertiser/remon_logo.svg" alt=""></div>
+                    <div class="logo_txt">REVIEW MONSTER</div>
                 </div>
-                <div class="menu_box">
-                    <div class="menu">
-                        <div class="menu_icon"></div>
+                <div class="ad_menu_box">
+                    <div class="ad_menu">
+                        <div class="ad_menu_icon"></div>
                         <div class="menu_txt">통합분석</div>
                     </div>
-                    <div class="menu">
-                        <div class="menu_icon"></div>
+                    <div class="ad_menu">
+                        <div class="ad_menu_icon"></div>
                         <div class="menu_txt">블로그 명단</div>
                     </div>
-                    <div class="menu">
-                        <div class="menu_icon"></div>
+                    <div class="ad_menu">
+                        <div class="ad_menu_icon"></div>
                         <div class="menu_txt">결과분석</div>
                     </div>
-                    <div class="menu">
-                        <div class="menu_icon"></div>
+                    <div class="ad_menu">
+                        <div class="ad_menu_icon"></div>
                         <div class="menu_txt">리포트</div>
                     </div>
-                    <div class="menu">
-                        <div class="menu_icon"></div>
+                    <div class="ad_menu">
+                        <div class="ad_menu_icon"></div>
                         <div class="menu_txt">보고서 인쇄</div>
                     </div>
                 </div>
                 <div class="profile_box">
-                    <div class="profile_img"></div>
+                    <div class="profile_img">
+                        <img src="../img/sub/advertiser/profile.png" alt="">
+                    </div>
                     <div class="profile_state">
                         <div class="profile_name">이땡땡</div>
                         <div class="profile_id"><span>ID :</span> LEEEE.JJ</div>
                     </div>
                 </div>
         </div>
-        <div class="main">
-            <div class="main_inner">
+        <!--aside_left 프로필 메뉴 영역 -->
+        <div class="ad_main">
+            <div class="ad_main_inner">
                 <div class="main_box_container">
-                    <div class="main_table analysis">
+                    <div class="ad_main_table analysis">
                         <h3>통합분석</h3>
                         <table>
                             <tr>
@@ -84,6 +87,51 @@
                                 <td>61회</td>
                             </tr>
                         </table>
+                        <!-- <table class="mo_ad_main_table">
+                            <tr>
+                                <th>회차</th>
+                                <td>3</td>
+                                <th>캠페인</th>
+                                <td>[배송] 오대양몰(홍어무침)</td>
+                                <th>일정</th>
+                                <td>2021-11-03 ~ 021-12-01</td>
+                                <th>리뷰수</th>
+                                <td>1</td>
+                                <th>조회수(PC)</th>
+                                <td>14회</td>
+                                <th>조회수(M)추정</th>
+                                <td>61회</td>
+                            </tr>
+                            <tr>
+                                <th>회차</th>
+                                <td>3</td>
+                                <th>캠페인</th>
+                                <td>[배송] 오대양몰(홍어무침)</td>
+                                <th>일정</th>
+                                <td>2021-11-03 ~ 021-12-01</td>
+                                <th>리뷰수</th>
+                                <td>1</td>
+                                <th>조회수(PC)</th>
+                                <td>14회</td>
+                                <th>조회수(M)추정</th>
+                                <td>61회</td>
+                            </tr>
+                            <tr>
+                                <th>회차</th>
+                                <td>3</td>
+                                <th>캠페인</th>
+                                <td>[배송] 오대양몰(홍어무침)</td>
+                                <th>일정</th>
+                                <td>2021-11-03 ~ 021-12-01</td>
+                                <th>리뷰수</th>
+                                <td>1</td>
+                                <th>조회수(PC)</th>
+                                <td>14회</td>
+                                <th>조회수(M)추정</th>
+                                <td>61회</td>
+                            </tr>
+                            
+                        </table> -->
                     </div>
                     <div class="main_table bloger">
                         <h3>블로거 명단</h3>
@@ -142,15 +190,17 @@
                         <h3>리포트</h3>
                         <div class="report_box">
                             <div class="report_left">
-                                <img src="../img/table_line_2.png" alt="">
+                                <img src="../img/sub/advertiser/report.png" alt="">
                             </div>
                             <div class="report_right">
+                                <img src="../img/sub/advertiser/report2.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- ad_main  -->
         <div class="aside_right">
             <div class="aside_right_box">
                 <div class="search_area">
@@ -163,8 +213,22 @@
                     </select>
                     <div class="search_bar"></div>
                 </div>
+                <div class="analy_1">
+                    <h3>성비</h3>
+                    <img src="../img/sub/advertiser/analy_female.png" alt="">
+                </div>
+                <div class="analy_2">
+                    <h3>연령대</h3>
+                    <img src="../img/sub/advertiser/analy_age.png" alt="">
+                </div>
+                <div class="analy_3">
+                    <h3>지역</h3>
+                    <img src="../img/sub/advertiser/analy_area.png" alt="">
+                </div>
             </div>
+
         </div>
+        <!-- aside_right 리스트선택 영역 -->
     </section>
 </body>
 </html>
