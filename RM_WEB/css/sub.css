@@ -47,7 +47,7 @@ section#review_top_img {
     padding: 80px 0 0;
 }
 
-section#area_menu:after{
+section#area_menu:after {
     content: '';
     width: 100vw;
     height: 1px;
@@ -1866,6 +1866,7 @@ tbody tr:nth-child(6) .l a:before {
 /* my_tab_container  */
 .my_tab_container {
     position: relative;
+    overflow: hidden;
 }
 
 .my_tab_container table {
@@ -2814,6 +2815,7 @@ span.review_pop:before {
 .se_sns_box {
     padding: 42px;
     background-color: #fbfbfb;
+    box-sizing: border-box;
 }
 
 .se_sns {
@@ -2848,14 +2850,17 @@ span.review_pop:before {
     background: url(../img/common/reviewmonster_icon_sns.png) no-repeat -3px -5px;
     margin-top: 1px;
 }
+
 .se_sns:nth-child(2) label:before {
     background: url(../img/common/reviewmonster_icon_sns.png) no-repeat -35px -5px;
     margin-top: 1px;
 }
+
 .se_sns:nth-child(3) label:before {
     background: url(../img/common/reviewmonster_icon_sns.png) no-repeat -67px -5px;
     margin-top: 1px;
 }
+
 .se_sns:last-child label:before {
     background: url(../img/common/reviewmonster_icon_sns.png) no-repeat -100px -5px;
     margin-top: 1px;
@@ -2895,7 +2900,7 @@ span.review_pop:before {
     width: 100%;
 }
 
-#info_adrress .info_agree{
+#info_adrress .info_agree {
     margin-top: 20px;
 }
 
@@ -2923,7 +2928,7 @@ span.review_pop:before {
     width: 170px;
 }
 
-#info_adrress table:last-child tr{
+#info_adrress table:last-child tr {
     display: flex;
     justify-content: space-between;
 }
@@ -2982,7 +2987,7 @@ span.review_pop:before {
     display: flex;
 }
 
-.my_tab_container > div {
+.my_tab_container>div {
     margin-bottom: 46px;
 }
 
@@ -2996,7 +3001,7 @@ span.review_pop:before {
     padding: 42px;
 }
 
-.pw_input > div label {
+.pw_input>div label {
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: 120px;
     display: inline-block;
@@ -3008,7 +3013,7 @@ span.review_pop:before {
     background-color: #fff;
 }
 
-.pw_input > div input {
+.pw_input>div input {
     width: 500px;
     padding: 8px;
     border-radius: 15px;
@@ -3016,7 +3021,7 @@ span.review_pop:before {
     outline: none;
 }
 
-.pw_input > div input::placeholder {
+.pw_input>div input::placeholder {
     color: #e8e8e8;
     font-size: 14px;
 }
@@ -3030,7 +3035,7 @@ span.review_pop:before {
     padding: 30px 20px;
     display: inline-block;
     border: 1px solid rgba(0, 0, 0, 0.1);
-
+    box-sizing: border-box;
 }
 
 .camera_select span {
@@ -3047,7 +3052,7 @@ span.review_pop:before {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.pw_input > div  {
+.pw_input>div {
     margin-bottom: 10px;
     margin-right: 10px;
 }
@@ -3111,18 +3116,21 @@ span.review_pop:before {
 
 
 .active_input div:nth-child(2),
-.active_input div:nth-child(3), 
+.active_input div:nth-child(3),
 .active_input div:nth-child(4) {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #fdfdfd;
     padding: 50px 0;
     margin-bottom: -1px;
+    box-sizing: border-box;
 }
 
 .active_input .active_area {
     background-color: #fbfbfb;
     display: flex;
     padding: 5px 10px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 .active_input span {
@@ -3171,16 +3179,17 @@ span.review_pop:before {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 8px 10px;
     max-width: 400px;
-    width: 100%;
+}
+
+.info_sex #info_Sex,
+.info_sex #info_Sex {
+    margin-right: 10px;
+    padding-right: 10px;
 }
 
 .info_sex {
     display: inline-block;
     width: 100%;
-}
-
-#info_sex {
-    color: crimson;
 }
 
 .info_mobile button {
@@ -3189,6 +3198,40 @@ span.review_pop:before {
     padding: 8px 10px;
     background: #fff;
     font-weight: bold;
+}
+
+.size_form {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 30px 20px;
+    background-color: #fdfdfd;
+}
+
+.size_form label {
+    width: 100px;
+    display: inline-block;
+    padding: 5px 0;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    text-align: center;
+}
+
+.size_form select {
+    width: 30%;
+    padding: 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.marition_state span {
+    margin-right: 10px;
+}
+
+.marition_state .single,
+.marition_state .marrid {
+    margin-right: 10px;
 }
 
 
@@ -3442,7 +3485,7 @@ span.review_pop:before {
         height: 55%;
         background-color: #e6e6e6;
         position: absolute;
-        right: 18px;
+        right: 4px;
     }
 
     .sub_box_table table tr td,
@@ -3893,7 +3936,7 @@ span.review_pop:before {
 
     .ad_box_table table tr th:before,
     .sub_box_table table tr th:before {
-        left: -40px;
+        left: 5px !important;
     }
 
     .ad_box_table table tr th,
@@ -3915,8 +3958,6 @@ span.review_pop:before {
         text-align: center;
         display: inline-block;
     }
-
-   
 
     .ad_sub_appli {
         position: fixed;
@@ -4022,6 +4063,75 @@ span.review_pop:before {
     #bank_name {
         margin: 10px 0;
     }
+
+
+    /* my_info_revision.html */
+
+    .size_info {
+        background: #fdfdfd;
+        padding: 30px 20px;
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .my_info_box {
+        padding: 0;
+    }
+
+    .my_info_box div {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .my_info_box div input,
+    .my_info_box div label {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .my_info_box label {
+        background-color: #e5e5e5;
+    }
+
+    #info_sex {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info_mobile button {
+        width: 100%;
+    }
+
+    .my_tab_container .info_adrress {
+        display: block;
+    }
+
+    .my_info_box label {
+        display: block;
+    }
+
+    .info_adrress label {
+        width: unset !important;
+        border: 1px solid gray;
+        height: 35px;
+    }
+
+    .se_sns_box {
+        padding: 10px;
+        box-sizing: border-box;
+
+    }
+
+    .se_sns input {
+        width: 100%;
+    }
+
+
+
 
 
 
