@@ -1079,6 +1079,7 @@ section#submenu {
     color: #222;
 }
 
+
 tbody tr .bd_num,
 tbody tr .l,
 tbody tr .bd_date,
@@ -1126,6 +1127,75 @@ tbody tr:nth-child(6) .l a:before {
     background: url(../img/sub/freeboard_img6.png) no-repeat center / auto 100%;
 }
 
+
+/* tbsty_table css start  */
+.tbsty_table {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tbsty_table ul {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table_title {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #eeeeee;
+}
+
+.table_title li {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+}
+
+.table_title li:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: gray;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+}
+
+.table_title li:first-child:after {
+    display: none;
+} 
+
+.tbsty_con ul li:nth-child(2) {
+    width: 250%;
+}
+.tbsty_con ul li:nth-child(3) {
+    width: 120%;
+}
+
+.tbsty_table ul {
+    display: flex;
+}
+
+.tbsty_table ul li {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tbsty_table ul li:nth-child(2) img {
+    width: 20%;
+    margin-right: 10px;
+    padding: 10px 0;
+}
+
+
+/* tbsty_table css end  */
+
+
+
 .paginate {
     width: 100%;
     margin: 50px 0 20px;
@@ -1161,7 +1231,7 @@ tbody tr:nth-child(6) .l a:before {
 }
 
 .paginate .btn_next {
-    background: url(../img/sub/next_arrow.png);
+    background: url(../img/sub/next_arrow.png) no-repeat;
 }
 
 .paginate .btn_end {
@@ -3305,7 +3375,6 @@ span.review_pop:before {
     }
 
     .product_menu_mo {
-        /* display: flex; */
         display: none;
         height: 40px;
         width: 100%;
@@ -3323,7 +3392,6 @@ span.review_pop:before {
         height: 40px;
         display: inline-block;
         line-height: 2;
-
     }
 
     #area_menu_select {
@@ -3333,8 +3401,6 @@ span.review_pop:before {
         padding: 0 10px;
         width: 62%;
     }
-
-
 
     .my_around_campaign {
         width: 100%;
@@ -3409,7 +3475,6 @@ span.review_pop:before {
     /* report.html css  */
     section#my_around_campaign {
         padding: 0 !important;
-        border: 2px solid red;
     }
 
 
@@ -3672,21 +3737,69 @@ span.review_pop:before {
         outline: none;
     }
 
-    .tbSty1 table {
-        border-top: none;
+
+
+    /* mo tbsty_table css start  */
+    .table_title {
+        display: none !important;
     }
 
-    .tbSty1 table thead {
-        display: none;
+    .tbsty_table {
+        width: 100%;
+        box-sizing: border-box;
     }
 
-    .tbSty1 tr .l {
-        font-weight: 100%;
+    .tbsty_table ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end;
+        box-sizing: border-box;
+        position: relative;
+        padding: 5px 0;
     }
 
-    tbody tr .l a:before {
-        left: -40px;
+    .tbsty_table ul li {
+        display: flex;
+        justify-content: flex-start;
+        width: 60% !important;
+        box-sizing: border-box;
+        padding: 2px 0;
     }
+
+    .tbsty_table ul li:nth-child(2) {
+        width: 100%;
+    }
+
+    .tbsty_table ul li:nth-child(2) img {
+        width: 30%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .tbsty_con ul li:nth-child(3) {
+        width:100%;
+    }
+
+    .paginate>a {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    .paginate .btn_first,
+    .paginate .btn_next,
+    .paginate .btn_end  {
+        background-size: 100%;
+    }
+
+
+
+    /* mo tbsty_table css end  */
+
+
 
 
     /* my/my.html css */

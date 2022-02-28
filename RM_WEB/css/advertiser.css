@@ -592,6 +592,10 @@ table {
         text-align-last: left;
     }
 
+    .blog_table ul li:nth-child(2) span {
+        height: 40px;
+    }
+
     .blog_table ul li p {
         float: left;
         width: 70%;
