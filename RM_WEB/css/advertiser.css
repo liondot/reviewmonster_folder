@@ -115,15 +115,112 @@ section#advertiser_section {
     height: 100%;
     background: #fff;
     border-radius: 15px;
-    padding: 20px 20px;
-    margin-bottom: 20px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
 }
 
 .mo_ad_main_table {
     display: none;
 }
 
-.ad_main_table h3 {
+/* .total_table css start */
+.total_table {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.total_table ul {
+    display: flex;
+}
+
+.total_table ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.total_table ul li span {
+    font-size: .9rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #eee;
+}
+
+.total_table ul li p {
+    font-weight: lighter;
+    padding: 10px 0;
+}
+
+.total_table ul li:nth-child(2) span,
+.total_table ul li:nth-child(3) span,
+.total_table ul:nth-child(2) li:nth-child(2) p,
+.total_table ul:nth-child(2) li:nth-child(3) p,
+.total_table ul:last-child li:nth-child(2) p,
+.total_table ul:last-child li:nth-child(3) p {
+    flex: 3;
+    width: 200px;
+}
+
+.total_table ul:nth-child(2) li span,
+.total_table ul:last-child li span {
+    display: none;
+}
+
+/* blog_table  */
+.blog_table {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.blog_table ul{
+    display: flex;
+}
+
+.blog_table ul:nth-child(2) span,
+.blog_table ul:last-child span {
+    display: none;
+}
+
+.blog_table ul li {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.blog_table ul li span {
+    font-size: .9rem;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #eee;
+}
+
+.blog_table ul li p {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.blog_table ul li:last-child {
+    text-align: center;
+}
+
+.blog_table ul li em {
+    width: 100%;
+    margin-top: 5px;
+    display: inline-block;
+
+}
+
+
+
+
+/* .total_table css end */
+
+.ad_main_table h3,
+.main_table h3,
+.main_table.report h3 {
     font-size: 17px;
     font-weight: bold;
     margin-bottom: 15px;
@@ -200,7 +297,7 @@ table {
 .main_table.bloger {
     border-radius: 15px;
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     font-size: 14px;
 }
 
@@ -228,7 +325,7 @@ table {
     margin-top: 20px;
     background: #fff;
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
     height: 300px;
 }
 
@@ -327,6 +424,11 @@ table {
 
 
 @media (max-width: 500px) {
+    body {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
     #advertiser_section {
         flex-direction: column !important;
         justify-content: flex-start;
@@ -413,6 +515,119 @@ table {
         text-align: center;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
+
+    /* mobile total_table css start  */
+    .total_table {
+        border: none;
+    }
+
+    .total_table ul{
+        margin-bottom: 10px;
+    }
+
+    .total_table ul li {
+        text-align: center;
+        background: #fff;
+    }
+
+    .total_table ul li span {
+        width: 30% !important;
+        text-align: left;
+    }
+
+    .total_table ul li p {
+        background: #fff;
+        width: 100% !important;
+    }
+
+    .total_table ul:nth-child(2) li span,
+    .total_table ul:last-child li span {
+        display: flex;
+    }
+
+    .total_table ul {
+        flex-direction: column;
+    }
+
+    .total_table ul li{
+        width: 100%;
+    }
+
+    .total_table ul li span {
+        float: left;
+    }
+
+   /* mo  blog_table css */
+   .main_table {
+       background: #fff5f2;
+       width: 100%;
+   }
+    .main_table h3 {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .blog_table {
+        border: none;
+    }
+
+    .blog_table ul {
+        flex-direction: column;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .blog_table ul {
+        margin-bottom: 10px;
+        background-color: #fff;
+    }
+
+    .blog_table ul:nth-child(2) span,
+.blog_table ul:last-child span {
+    display: flex;
+}
+
+    .blog_table ul li span {
+        width: 30%;
+        float: left;
+        text-align-last: left;
+    }
+
+    .blog_table ul li p {
+        float: left;
+        width: 70%;
+    }
+
+    .blog_table ul li em {
+        width: unset;
+    }
+
+    .blog_table ul li:last-child {
+        height: 100%;
+    }
+
+    .blog_table ul li:last-child span {
+        height: 56px;
+    }
+
+    .blog_table ul li:last-child p {
+        float: right;
+        width: 65%;
+    }
+
+    .main_table.report {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+
+    .aside_right {
+    }
+
+
+
+
+
+    /* mobile total_table css end */
 
     .main_table.bloger {
         padding: 0;
