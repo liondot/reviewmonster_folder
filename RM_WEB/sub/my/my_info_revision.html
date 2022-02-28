@@ -241,8 +241,14 @@
                     </div>
                     <div class="info_sex">
                         <label for="info_sex">성별</label>
-                        <input type="radio" id="info_sex"><span>남자</span>   
-                        <input type="radio" id="info_sex"><span>여자</span>
+                       <div class="info_sex_men">
+                            <label for="men" id="info_sex_title">남자</label>
+                            <input type="radio" name="sex" value="male" id="info_sex">
+                       </div>
+                       <div class="info_sex_female">
+                           <label for="female" id="info_sex_title">여자</label>
+                           <input type="radio" name="sex" value="female" id="info_sex">
+                        </div>
                     </div>
                     <div class="info_age_year">
                         <label for="age_of">출생연도</label>
@@ -281,7 +287,7 @@
                                 </tr>
                                 <tr>
                                     <th> 수집동의 </th>
-                                    <td><input type="radio" checked><span> 이메일을 통한 캠페인 모집 및 추천, 설문조사, 이벤트 정보 등의 수신에 동의합니다.</span></td>
+                                    <td><input type="radio"><span> 이메일을 통한 캠페인 모집 및 추천, 설문조사, 이벤트 정보 등의 수신에 동의합니다.</span></td>
                                     <td><input type="radio"> <span>문자, 카카오톡, 챗봇 등을 통핸 캠페인 모집 및 추천, 설문조사, 이벤트 정보 등의 수신에 동의합니다.</span></td>
                                 </tr>
                                 <tr>
@@ -309,22 +315,22 @@
                     </div>
                     <div class="se_sns_box">
                         <div class="se_sns second_blog">
-                            <label for="se_blog">블로그</label>
+                            <label for="se_blog"><span>블로그</span></label>
                             <input type="text" placeholder="https://">
                             <button>등록</button>
                         </div>
                         <div class="se_sns second_insta">
-                            <label for="se_insta">인스타그램</label>
+                            <label for="se_insta"><span>인스타그램</span></label>
                             <input type="text" placeholder="https://">
                             <button>등록</button>
                         </div>
                         <div class="se_sns second_youtube">
-                            <label for="se_youtube">유튜브</label>
+                            <label for="se_youtube"><span>유튜브</span></label>
                             <input type="text" placeholder="https://">
                             <button>등록</button>
                         </div>
                         <div class="se_sns second_facebook">
-                            <label for="se_youtube">페이스북</label>
+                            <label for="se_youtube"><span>페이스북</span></label>
                             <input type="text" placeholder="https://">
                             <button>등록</button>
                         </div>
@@ -510,8 +516,8 @@
                         </div>
                         <div class="marition_state">
                             <label for="marition">결혼 여부</label>
-                            <input type="radio" class="single"><span>미혼</span>
-                            <input type="radio" class="marrid"><span>기혼</span>
+                            <input type="radio" name="marrid" value="single"  class="single"><span>미혼</span>
+                            <input type="radio" name="marrid" value="marrid"  class="marrid"><span>기혼</span>
                         </div>
                         <div class="job">
                             <label for="job">직업</label>
