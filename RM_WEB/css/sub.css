@@ -2407,6 +2407,14 @@ input[type=checkbox] {
     left: 0;
 }
 
+.faq_request {
+    margin-bottom: 80px;
+}
+
+.faq_request:last-child {
+    margin-bottom: 0;
+}
+
 .faq_show {
     position: relative;
 }
@@ -2415,6 +2423,44 @@ input[type=checkbox] {
     position: absolute;
     right: 0;
 }
+
+
+.faq_title {
+    cursor: pointer;
+    padding: 10px 0;
+    font-size: 16px;
+    border-bottom: 1px solid gray;
+    position: relative;
+}
+
+.faq_title:after {
+    content: '';
+    background: url(../img/sub/faq_arrow.svg) no-repeat center / auto 100%;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    transition: .3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.faq_title.active:after {
+    transform: rotate(95deg) translateX(-50%);
+} 
+
+.faq_title.active {
+    font-weight: bold;
+}
+
+.faq_content {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 2;
+    display: none;
+}
+
 
 /* ad.page.html */
 
